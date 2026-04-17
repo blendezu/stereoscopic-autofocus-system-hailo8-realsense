@@ -3,45 +3,61 @@
 ## About the project
 This project was developed as part of the Camera Technology module in the Media Technology program at the University of Applied Sciences Cologne during the Summer Semester 2025.
 
-Supervision:
+**Supervision:**
 - Prof. Gregor Fischer - IMP F07
 - Prof. Dirk Poggemann - IMP F07
 - Christian Loebich - IMP F07
 
-Project Manager: Anh Duong Tran
+**Project Manager:** Anh Duong Tran
 
-
-Contributions:
+**Contributions:**
 - Project Idea, Concept & Equipment Selection: Anh Duong Tran
 - Control Hardware Setup: Angelika Allgäuer, Mark Ulanowski
+- 3D Print: Timo Schulz
 - Motor Control System: Angelika Allgäuer, Doron Kohler, Mark Ulanowski
 - Stereo Camera System & GUI Development: Hannah Strippel, Anh Duong Tran
 - Object Detection & Tracking: Anh Duong Tran
 
 ## Achievements
-This project won second place at the Poster Session of the Media Technology program and received a grade of 1.0 (German) for the Camera Technology module.
 
-<div align="center">
-  <img src="images/postersession.png" alt="Poster Session" width="60%">
+<div style="display:flex; align-items:center; gap:16px; margin-bottom:20px;">
+  <div style="flex:0 0 48%; max-width:48%;">
+    <img src="images/postersession.png" alt="Poster Session" style="width:100%; height:auto; display:block;">
+  </div>
+  <div style="flex:1; padding-left:12px;">
+    <p style="margin:0; font-size:1rem;">
+      We won second place at the Poster Session of the Media Technology program and received a grade of 1.0 (German) for the Camera Technology module.
+    </p>
+  </div>
 </div>
 
 ## Overview
-<img src="images/finalResult.png" alt="Finalset" width="80%">
+<div align="center" style="margin-bottom:20px;">
+  <img src="images/finalResult.png" alt="Finalset" style="max-width:80%; height:auto; display:block; margin:0 auto;">
+</div>
 
 This project implements a real-time stereoscopic autofocus system, which provides an interactive GUI to perform person detection, tracking, depth-based distance estimation, and stepper-motor driven lens focusing in real time. It uses:
 - Intel RealSense D455 for RGB + depth frames
-- YOLO models for person, face, and segmentation
-- Hailo-8 AI accelerator for besser Object detection
+- YOLO models for detection person, face, and segmentation
+- Hailo-8 AI accelerator for object detection
 - SORT for multi-object tracking
 - An Adafruit Motor HAT to drive a stepper on the lens focus ring
 - Raspberry Pi 5
 - The whole system powered by a Vmount baterry
 
-<img src="images/controlHardware.png" alt="Hardware" width="40%">
-
+<!-- replace the previous flex container: show images first and captions centered below each image -->
+<div style="display:flex; justify-content:center; align-items:flex-start; gap:12px;">
+  <div style="text-align:center; width:28.5%;">
+    <img src="images/controlHardware.png" alt="Hardware" style="width:100%; height:auto;">
+    <div style="font-weight:700; font-size:8px; margin-top:6px;">Control Hardware</div>
+  </div>
+  <div style="text-align:center; width:58%;">
+    <img src="images/pipeline.png" alt="Pipeline" style="width:100%; height:auto;">
+    <div style="font-weight:700; font-size:8px; margin-top:6px;">System pipeline</div>
+  </div>
+</div>
 
 ## Key Features
-<img src="images/pipeline.png" alt="Pipeline" width="80%">
 
 - Launch flow: Loading screen → Calibration screen → Main screen
 - Calibration checklist with lighting condition selection
@@ -77,30 +93,30 @@ Tracking-by-detection with YOLO und SORT:
 
 ## Distance Correction for Stereo Camera
 
-We tested the Intel RealSense D455 stereo camera and discovered that the measured distances were consistently greater than the actual distances. To address this, we developed a correction function and lookup tables (LUTs) to calibrate the measured distances to true distances across different lighting conditions.
+We tested the Intel RealSense D455 stereo camera and discovered that the measured distances were consistently greater than the actual distances. To address this, we developed a correction function and lookup tables (LUTs) to calibrate the measured distances to true distances across different lighting conditions. We messured again an had the results on the right. 
 
-Inside in good lighting condition
+You can find the measurements in this  [google sheet](https://docs.google.com/spreadsheets/d/1Mt2iLZNg792dCo4I_J54miuZmEHCaRKvOUn7tRtqKD0/edit?usp=sharing).
+
+This is a quick comparasion between before and with our correction:
+
 <div align="center">
-  <img src="images/InsideGoodLighting.png" alt="1.1" width="45%">
+  <img src="images/InsideGoodLighting.png" alt="1.1" width="42.5%">
   <img src="images/InsideGoodLightingCorrected.png" alt="1.2" width="45%">
+  <div style="text-align:center; margin-top:1px; margin-bottom:20px;">Inside in good lighting condition</div>
 </div>
 
-Inside in bad lighting condition
 <div align="center">
-  <img src="images/InsideBadLighting.png" alt="2.1" width="45%">
+  <img src="images/InsideBadLighting.png" alt="2.1" width="42%">
   <img src="images/InsideBadLightingCorrected.png" alt="2.2" width="45%">
+  <div style="text-align:center; margin-top:1px; margin-bottom:20px;">Inside in bad lighting condition</div>
 </div>
 
-Outsid in good lighting condition
 <div align="center">
-  <img src="images/OutsideGoodLighting.png" alt="1.1" width="45%">
+  <img src="images/OutsideGoodLighting.png" alt="1.1" width="41.5%">
   <img src="images/OutsideGoodLightingCorrected.png" alt="1.2" width="45%">
+  <div style="text-align:center; margin-top:1px; margin-bottom:20px;">Outside in good lighting condition</div>
 </div>
 
-Link to google sheet of measurement
-```bash
-https://docs.google.com/spreadsheets/d/1Mt2iLZNg792dCo4I_J54miuZmEHCaRKvOUn7tRtqKD0/edit?usp=sharing
-```
 
 
 ## Computer Vision Pipeline
@@ -130,7 +146,7 @@ https://docs.google.com/spreadsheets/d/1Mt2iLZNg792dCo4I_J54miuZmEHCaRKvOUn7tRtq
 ## Requirements
 - Python 3.10+
 - Kivy, NumPy, OpenCV
-- pyrealsense2 (Intel librealsense2 stack)
 - degirum PySDK for Inference on Hailo device (or HailoRT runtime as required)
 - Adafruit MotorKit and adafruit_motor
-- SORT
+- [pyrealsense2](https://github.com/realsenseai/librealsense)
+- [SORT](https://github.com/abewley/sort)
