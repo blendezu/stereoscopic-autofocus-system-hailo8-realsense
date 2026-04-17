@@ -101,23 +101,51 @@ You can find the measurements in this  [google sheet](https://docs.google.com/sp
 
 This is a quick comparasion between before and with our correction:
 
-<div align="center">
-  <img src="images/InsideGoodLighting.png" alt="1.1" width="42.5%">
-  <img src="images/InsideGoodLightingCorrected.png" alt="1.2" width="45%">
-  <div style="text-align:center; margin-top:1px; margin-bottom:20px;">Inside in good lighting condition</div>
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="images/InsideGoodLighting.png" alt="Inside good lighting (raw)" width="85%">
+    </td>
+    <td align="center" width="50%">
+      <img src="images/InsideGoodLightingCorrected.png" alt="Inside good lighting (corrected)" width="85%">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><sub>Inside in good lighting condition</sub></td>
+  </tr>
+</table>
 
-<div align="center">
-  <img src="images/InsideBadLighting.png" alt="2.1" width="42%">
-  <img src="images/InsideBadLightingCorrected.png" alt="2.2" width="45%">
-  <div style="text-align:center; margin-top:1px; margin-bottom:20px;">Inside in bad lighting condition</div>
-</div>
+<br>
 
-<div align="center">
-  <img src="images/OutsideGoodLighting.png" alt="1.1" width="41.5%">
-  <img src="images/OutsideGoodLightingCorrected.png" alt="1.2" width="45%">
-  <div style="text-align:center; margin-top:1px; margin-bottom:20px;">Outside in good lighting condition</div>
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="images/InsideBadLighting.png" alt="Inside bad lighting (raw)" width="85%">
+    </td>
+    <td align="center" width="50%">
+      <img src="images/InsideBadLightingCorrected.png" alt="Inside bad lighting (corrected)" width="85%">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><sub>Inside in bad lighting condition</sub></td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="images/OutsideGoodLighting.png" alt="Outside good lighting (raw)" width="85%">
+    </td>
+    <td align="center" width="50%">
+      <img src="images/OutsideGoodLightingCorrected.png" alt="Outside good lighting (corrected)" width="85%">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><sub>Outside in good lighting condition</sub></td>
+  </tr>
+</table>
 
 
 
