@@ -20,16 +20,16 @@ This project was developed as part of the Camera Technology module in the Media 
 
 ## Achievements
 
-<div style="display:flex; align-items:center; gap:16px; margin-bottom:20px;">
-  <div style="flex:0 0 48%; max-width:48%;">
-    <img src="images/postersession.png" alt="Poster Session" style="width:100%; height:auto; display:block;">
-  </div>
-  <div style="flex:1; padding-left:12px;">
-    <p style="margin:0; font-size:1rem;">
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="45%">
+      <img src="images/postersession.png" alt="Poster Session" width="100%">
+    </td>
+    <td align="left" width="55%">
       We won second place at the Poster Session of the Media Technology program and received a grade of 1.0 (German) for the Camera Technology module.
-    </p>
-  </div>
-</div>
+    </td>
+  </tr>
+</table>
 
 ## Overview
 <div align="center" style="margin-bottom:20px;">
