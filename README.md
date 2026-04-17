@@ -77,21 +77,14 @@ This project implements a real-time stereoscopic autofocus system, which provide
   - Colored sample points (green = selected target, gray = others)
 - FPS display, reset tracking button, and safe cleanup on exit
 
-## Demo Video
+## Demo Videos
 
-Tracking-by-detection with YOLO und SORT:
+https://github.com/user-attachments/assets/23cde0f6-165d-4ff5-bad3-c7a23c0fb777
 
-<div align="center">
-  <a href="https://www.youtube.com/shorts/-5ozBTq2l24">
-    <img src="images/trackingSortYT.png" alt="Object Tracking" width="30%">
-  </a>
-  <a href="https://www.youtube.com/shorts/xMcakpQYOgM">
-    <img src="images/oFYT.png" alt="Optical Flow" width="30%">
-  </a>
-  <a href="https://www.youtube.com/shorts/RXhNjNWLM1I?feature=share">
-    <img src="images/GUIShortYT.png" alt="GUI" width="30%">
-  </a>
-</div>
+
+https://github.com/user-attachments/assets/037037d1-ca31-4597-b1be-26f0d1f9d9b4
+
+
 
 ## Distance Correction for Stereo Camera
 
