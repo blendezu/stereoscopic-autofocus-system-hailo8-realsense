@@ -46,16 +46,18 @@ This project implements a real-time stereoscopic autofocus system, which provide
 - The whole system powered by a Vmount baterry
 
 <!-- replace the previous flex container: show images first and captions centered below each image -->
-<div style="display:flex; justify-content:center; align-items:flex-start; gap:12px;">
-  <div style="text-align:center; width:28.5%;">
-    <img src="images/controlHardware.png" alt="Hardware" style="width:100%; height:auto;">
-    <div style="font-weight:700; font-size:8px; margin-top:6px;">Control Hardware</div>
-  </div>
-  <div style="text-align:center; width:58%;">
-    <img src="images/pipeline.png" alt="Pipeline" style="width:100%; height:auto;">
-    <div style="font-weight:700; font-size:8px; margin-top:6px;">System pipeline</div>
-  </div>
-</div>
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <img src="images/controlHardware.png" alt="Hardware" width="100%">
+      <br><sub><b>Control Hardware</b></sub>
+    </td>
+    <td align="center" width="67%">
+      <img src="images/pipeline.png" alt="Pipeline" width="100%">
+      <br><sub><b>System pipeline</b></sub>
+    </td>
+  </tr>
+</table>
 
 ## Key Features
 
