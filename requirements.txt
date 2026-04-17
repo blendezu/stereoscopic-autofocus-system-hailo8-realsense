@@ -1,6 +1,10 @@
+# can be installed with pip
 opencv-python
-pyrealsense2
 degirum PySDK
 numpy
 adafruit-motorkit
-sort
+
+
+# install manually
+# sort -> https://github.com/abewley/sort
+# pyrealsense2 -> https://github.com/realsenseai/librealsense
