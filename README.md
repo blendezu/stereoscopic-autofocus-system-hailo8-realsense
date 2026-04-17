@@ -84,30 +84,6 @@ https://github.com/user-attachments/assets/23cde0f6-165d-4ff5-bad3-c7a23c0fb777
 
 https://github.com/user-attachments/assets/037037d1-ca31-4597-b1be-26f0d1f9d9b4
 
-
-<!-- ...existing code... -->
-
-## Demo Videos
-
-<table align="center" width="100%">
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/user-attachments/assets/23cde0f6-165d-4ff5-bad3-c7a23c0fb777">
-        <img src="images/demo_video_1_thumb.png" alt="Demo Video 1" width="70%">
-      </a>
-      <br><sub><b>Demo Video 1</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/user-attachments/assets/037037d1-ca31-4597-b1be-26f0d1f9d9b4">
-        <img src="images/demo_video_2_thumb.png" alt="Demo Video 2" width="70%">
-      </a>
-      <br><sub><b>Demo Video 2</b></sub>
-    </td>
-  </tr>
-</table>
-
-<!-- ...existing code... -->
-
 ## Distance Correction for Stereo Camera
 
 We tested the Intel RealSense D455 stereo camera and discovered that the measured distances were consistently greater than the actual distances. To address this, we developed a correction function and lookup tables (LUTs) to calibrate the measured distances to true distances across different lighting conditions. We messured again an had the results on the right. 
