@@ -18,7 +18,7 @@ This project was developed as part of the Camera Technology module in the Media 
 - Stereo Camera System & GUI Development: Hannah Strippel, Anh Duong Tran
 - Object Detection & Tracking: Anh Duong Tran
 
-## Achievements
+<!-- ## Achievements
 
 <table align="center" width="100%">
   <tr>
@@ -29,7 +29,7 @@ This project was developed as part of the Camera Technology module in the Media 
       We won second place at the Poster Session of the Media Technology program and received a grade of 1.0 (German) for the Camera Technology module.
     </td>
   </tr>
-</table>
+</table> -->
 
 ## Overview
 <div align="center" style="margin-bottom:20px;">
